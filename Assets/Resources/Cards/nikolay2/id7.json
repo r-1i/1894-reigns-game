@@ -1,0 +1,50 @@
+{
+  "id": 7,
+  "is_start": false,
+  "type": 2,
+  "name": "Голод в Поволжье",
+  "description": "Губернатор Самарской губернии присылает донесение: «Ваше Величество, неурожай третий год подряд. Крестьяне голодают. Нужна государственная помощь». Обер-прокурор Победоносцев советует: «Не поощряйте иждивенчество, Государь».",
+  "image": "volga_famine",
+  "properties_yes": {
+    "text": "Выделить зерно из государственных резервов",
+    "pos": {
+      "id_next": 8,
+      "moves_next": 1,
+      "chance": 0.65,
+      "properties": {"people": 25, "treasury": -20, "nobility": 5}
+    },
+    "neg": {
+      "id_next": 8,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 10, "treasury": -25}
+    },
+    "neu": {
+      "id_next": 8,
+      "moves_next": 1,
+      "chance": 0.15,
+      "properties": {"people": 15, "treasury": -15}
+    }
+  },
+  "properties_no": {
+    "text": "Отказать — пусть губернии справляются сами",
+    "pos": {
+      "id_next": 8,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"treasury": 10, "nobility": 5, "people": -25}
+    },
+    "neg": {
+      "id_next": 8,
+      "moves_next": 1,
+      "chance": 0.45,
+      "properties": {"people": -35, "army": -5}
+    },
+    "neu": {
+      "id_next": 8,
+      "moves_next": 1,
+      "chance": 0.25,
+      "properties": {"treasury": 5, "people": -20}
+    }
+  }
+}

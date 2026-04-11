@@ -1,0 +1,50 @@
+{
+  "id": 8,
+  "is_start": false,
+  "type": 0,
+  "name": "Подготовка к коронации",
+  "description": "Министр двора Воронцов-Дашков предлагает два варианта торжеств: «Государь, можем устроить скромную коронацию — народ поймёт, казна цела. Или грандиозный праздник на всю Москву — слава на весь мир, но расходы огромны». Ваш выбор?",
+  "image": "coronation_prep",
+  "properties_yes": {
+    "text": "Грандиозный праздник — Россия должна блистать!",
+    "pos": {
+      "id_next": 9,
+      "moves_next": 1,
+      "chance": 0.55,
+      "properties": {"people": 20, "nobility": 20, "treasury": -25, "army": 5}
+    },
+    "neg": {
+      "id_next": 9,
+      "moves_next": 1,
+      "chance": 0.25,
+      "properties": {"people": 10, "nobility": 15, "treasury": -30}
+    },
+    "neu": {
+      "id_next": 9,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 15, "nobility": 15, "treasury": -25}
+    }
+  },
+  "properties_no": {
+    "text": "Скромная церемония — мы в трауре",
+    "pos": {
+      "id_next": 9,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"treasury": 20, "people": 5, "nobility": -10}
+    },
+    "neg": {
+      "id_next": 9,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"treasury": 10, "people": -5, "nobility": -15}
+    },
+    "neu": {
+      "id_next": 9,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"treasury": 15, "nobility": -5}
+    }
+  }
+}

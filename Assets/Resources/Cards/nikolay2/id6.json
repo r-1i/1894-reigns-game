@@ -1,0 +1,50 @@
+{
+  "id": 6,
+  "is_start": false,
+  "type": 0,
+  "name": "Транссибирский указ",
+  "description": "Витте кладёт на стол чертежи: «Государь, Транссибирская магистраль — мечта вашего отца. Нужно подписать указ о продолжении строительства. Это укрепит связь с Дальним Востоком, но потребует колоссальных средств». Подписываете указ?",
+  "image": "trans_siberian_decree",
+  "properties_yes": {
+    "text": "Подписать — величие России важнее",
+    "pos": {
+      "id_next": 7,
+      "moves_next": 1,
+      "chance": 0.55,
+      "properties": {"people": 10, "army": 10, "treasury": -20, "nobility": 5}
+    },
+    "neg": {
+      "id_next": 7,
+      "moves_next": 1,
+      "chance": 0.25,
+      "properties": {"treasury": -25, "people": 5}
+    },
+    "neu": {
+      "id_next": 7,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"army": 5, "treasury": -20, "people": 5}
+    }
+  },
+  "properties_no": {
+    "text": "Отложить — слишком дорого",
+    "pos": {
+      "id_next": 7,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"treasury": 15, "army": -10, "people": -5}
+    },
+    "neg": {
+      "id_next": 7,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"treasury": 10, "army": -15, "people": -10}
+    },
+    "neu": {
+      "id_next": 7,
+      "moves_next": 1,
+      "chance": 0.25,
+      "properties": {"treasury": 10, "army": -5}
+    }
+  }
+}

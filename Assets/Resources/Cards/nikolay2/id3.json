@@ -1,0 +1,50 @@
+{
+  "id": 3,
+  "is_start": false,
+  "type": 0,
+  "name": "Смена дворцовой охраны",
+  "description": "Генерал Рихтер докладывает: «Ваше Величество, старая охрана присягала ещё вашему отцу. Предлагаю набрать новых гвардейцев — молодых, преданных лично вам. Это потребует расходов, но укрепит безопасность дворца». Одобряете смену?",
+  "image": "palace_guard",
+  "properties_yes": {
+    "text": "Обновить гвардию",
+    "pos": {
+      "id_next": 4,
+      "moves_next": 1,
+      "chance": 0.6,
+      "properties": {"army": 15, "treasury": -10}
+    },
+    "neg": {
+      "id_next": 4,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"army": 5, "treasury": -15, "nobility": -5}
+    },
+    "neu": {
+      "id_next": 4,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"army": 10, "treasury": -10}
+    }
+  },
+  "properties_no": {
+    "text": "Оставить старую гвардию",
+    "pos": {
+      "id_next": 4,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"army": -5, "nobility": 10}
+    },
+    "neg": {
+      "id_next": 4,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"army": -10, "nobility": 5}
+    },
+    "neu": {
+      "id_next": 4,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"army": -5}
+    }
+  }
+}

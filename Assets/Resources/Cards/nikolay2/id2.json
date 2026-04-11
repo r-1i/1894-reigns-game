@@ -1,0 +1,50 @@
+{
+  "id": 2,
+  "is_start": false,
+  "type": 0,
+  "name": "Траур по Александру III",
+  "description": "Министр двора докладывает: «Государь, траур по батюшке вашему длится. Некоторые дворяне предлагают сократить его до трёх месяцев ради государственных приёмов. Народ же ждёт полного года скорби». Как поступить?",
+  "image": "id2",
+  "properties_yes": {
+    "text": "Сократить траур — дела не ждут",
+    "pos": {
+      "id_next": 3,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"nobility": 10, "treasury": 5, "people": -10}
+    },
+    "neg": {
+      "id_next": 3,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": 5, "people": -15}
+    },
+    "neu": {
+      "id_next": 3,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 5, "people": -5}
+    }
+  },
+  "properties_no": {
+    "text": "Соблюдать полный год траура",
+    "pos": {
+      "id_next": 3,
+      "moves_next": 1,
+      "chance": 0.6,
+      "properties": {"people": 15, "nobility": -5}
+    },
+    "neg": {
+      "id_next": 3,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 5, "treasury": -10}
+    },
+    "neu": {
+      "id_next": 3,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 10}
+    }
+  }
+}

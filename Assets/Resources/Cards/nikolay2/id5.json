@@ -1,0 +1,50 @@
+{
+  "id": 5,
+  "is_start": false,
+  "type": 0,
+  "name": "Жалованье офицеров",
+  "description": "Военный министр Ванновский докладывает: «Государь, офицеры давно не получали прибавки. Боевой дух падает. Прошу выделить средства из казны». Министр финансов Вышнеградский морщится: «Казна не безгранична, Ваше Величество».",
+  "image": "officer_salaries",
+  "properties_yes": {
+    "text": "Повысить жалованье офицерам",
+    "pos": {
+      "id_next": 6,
+      "moves_next": 1,
+      "chance": 0.6,
+      "properties": {"army": 20, "treasury": -15}
+    },
+    "neg": {
+      "id_next": 6,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"army": 10, "treasury": -20}
+    },
+    "neu": {
+      "id_next": 6,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"army": 15, "treasury": -15}
+    }
+  },
+  "properties_no": {
+    "text": "Отказать — казна важнее",
+    "pos": {
+      "id_next": 6,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"treasury": 10, "army": -15}
+    },
+    "neg": {
+      "id_next": 6,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"treasury": 5, "army": -20, "people": -5}
+    },
+    "neu": {
+      "id_next": 6,
+      "moves_next": 1,
+      "chance": 0.25,
+      "properties": {"treasury": 5, "army": -10}
+    }
+  }
+}

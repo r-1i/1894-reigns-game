@@ -1,0 +1,50 @@
+{
+  "id": 4,
+  "is_start": false,
+  "type": 2,
+  "name": "Первая аудиенция земств",
+  "description": "Делегация земств из Твери подаёт прошение: «Государь, дозвольте земствам участвовать в государственных решениях!». Витте шепчет: «Откажите — иначе дворянство решит, что вы слабы». Александра Фёдоровна сжимает вашу руку: «Ники, будь тверёд».",
+  "image": "zemstvo_audience",
+  "properties_yes": {
+    "text": "Принять прошение земств",
+    "pos": {
+      "id_next": 5,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"people": 20, "nobility": -15}
+    },
+    "neg": {
+      "id_next": 5,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"people": 10, "nobility": -20, "treasury": -5}
+    },
+    "neu": {
+      "id_next": 5,
+      "moves_next": 1,
+      "chance": 0.25,
+      "properties": {"people": 15, "nobility": -10}
+    }
+  },
+  "properties_no": {
+    "text": "Отклонить «бессмысленные мечтания»",
+    "pos": {
+      "id_next": 5,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"nobility": 15, "people": -20}
+    },
+    "neg": {
+      "id_next": 5,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": 10, "people": -25, "army": -5}
+    },
+    "neu": {
+      "id_next": 5,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 10, "people": -15}
+    }
+  }
+}

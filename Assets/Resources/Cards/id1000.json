@@ -1,0 +1,50 @@
+{
+  "id": 1000,
+  "is_start": false,
+  "type": 0,
+  "name": "Конец?",
+  "description": "Инвестиционное страхование жизни - это сложный финансовый продукт для клиентов, которые:\n - Ищут защиту капитала с гарантией возврата (и небольшого прироста).\n - Готовs заблокировать средства на долгий срок (4 года).\n - Хотят получить потенциальный доход выше вклада, но с ограниченным риском.\n - Ценят страховую защиту на случай смерти.",
+  "image": "swiss_clocks",
+  "properties_yes": {
+    "text": "Сыграть еще",
+    "pos": {
+      "id_next": -300,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Как оформить ИСЖ?",
+    "pos": {
+      "id_next": -122,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

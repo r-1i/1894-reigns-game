@@ -1,0 +1,50 @@
+{
+  "id": 1,
+  "is_start": true,
+  "type": 0,
+  "name": "Восшествие на престол",
+  "description": "1894 год. Ваш отец, Александр III, скончался. Россия замерла в трауре. Граф Витте склоняет голову: «Государь, империя ждёт вашей воли. Четыре силы держат трон — народ, дворянство, армия и казна. Не дайте ни одной упасть до нуля». Вы готовы принять корону?",
+  "image": "id1",
+  "properties_yes": {
+    "text": "Принять корону России",
+    "pos": {
+      "id_next": 2,
+      "moves_next": 1,
+      "chance": 1.0,
+      "properties": {"people": 5, "nobility": 5, "army": 5, "treasury": 5}
+    },
+    "neg": {
+      "id_next": 2,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 2,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Я не готов к этому бремени",
+    "pos": {
+      "id_next": 2,
+      "moves_next": 1,
+      "chance": 1.0,
+      "properties": {"people": -5, "nobility": -10, "army": -5}
+    },
+    "neg": {
+      "id_next": 2,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 2,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

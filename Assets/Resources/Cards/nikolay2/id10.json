@@ -1,0 +1,50 @@
+{
+  "id": 10,
+  "is_start": false,
+  "type": 0,
+  "name": "Первый год позади",
+  "description": "1895 год. Первый год царствования завершён. Витте подводит итог: «Вы приняли корону, встретили земства, решали вопросы армии и казны. Россия смотрит на вас, Государь. Настоящие испытания ещё впереди — Дальний Восток неспокоен». Продолжить?",
+  "image": "first_year_review",
+  "properties_yes": {
+    "text": "Россия ждёт — продолжаем",
+    "pos": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 1.0,
+      "properties": {"people": 5, "nobility": 5, "army": 5, "treasury": 5}
+    },
+    "neg": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Пусть советники решают...",
+    "pos": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 1.0,
+      "properties": {"nobility": -10, "army": -10, "people": -5}
+    },
+    "neg": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}
