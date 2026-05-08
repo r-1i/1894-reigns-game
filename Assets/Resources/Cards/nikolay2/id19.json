@@ -1,0 +1,50 @@
+{
+  "id": 19,
+  "is_start": false,
+  "type": 2,
+  "name": "Кишинёвский погром",
+  "description": "Апрель 1903 года. В Кишинёве — еврейский погром. Десятки убитых, сотни раненых. Мировая пресса в ярости. Плеве предлагает замять дело: «Это внутренние дела империи». Либералы требуют наказать виновных и осудить погромщиков публично. Ваш ответ?",
+  "image": "id19",
+  "properties_yes": {
+    "text": "Публично осудить погром, наказать виновных",
+    "pos": {
+      "id_next": 20,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"people": 15, "nobility": -12, "treasury": 8}
+    },
+    "neg": {
+      "id_next": 20,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": -22, "army": -8, "people": 5}
+    },
+    "neu": {
+      "id_next": 20,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 8, "nobility": -10, "treasury": 3}
+    }
+  },
+  "properties_no": {
+    "text": "Замять дело — внутренние дела империи",
+    "pos": {
+      "id_next": 20,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": 10, "people": -10, "treasury": -5}
+    },
+    "neg": {
+      "id_next": 20,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"people": -28, "treasury": -15, "nobility": 5, "army": -8}
+    },
+    "neu": {
+      "id_next": 20,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": -15, "nobility": 5, "treasury": -8}
+    }
+  }
+}

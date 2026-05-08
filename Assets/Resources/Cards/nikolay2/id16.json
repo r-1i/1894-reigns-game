@@ -1,0 +1,50 @@
+{
+  "id": 16,
+  "is_start": false,
+  "type": 0,
+  "name": "Студенческие волнения",
+  "description": "1901 год. Петербургский университет бурлит. Студенты требуют автономии, проводят сходки. Министр просвещения Ванновский предлагает реформу — дать университетам больше свободы. Победоносцев в ярости: «Уступить студентам — открыть двери революции!». Реформировать?",
+  "image": "id16",
+  "properties_yes": {
+    "text": "Дать университетам автономию",
+    "pos": {
+      "id_next": 17,
+      "moves_next": 1,
+      "chance": 0.45,
+      "properties": {"people": 15, "nobility": -12, "treasury": -5}
+    },
+    "neg": {
+      "id_next": 17,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"nobility": -20, "army": -8, "people": 5}
+    },
+    "neu": {
+      "id_next": 17,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 8, "nobility": -10, "treasury": -3}
+    }
+  },
+  "properties_no": {
+    "text": "Подавить волнения, исключить зачинщиков",
+    "pos": {
+      "id_next": 17,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"nobility": 15, "army": 8, "people": -15}
+    },
+    "neg": {
+      "id_next": 17,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"people": -25, "nobility": 5, "army": -8}
+    },
+    "neu": {
+      "id_next": 17,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 8, "people": -12, "army": 3}
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": 17,
+  "is_start": false,
+  "type": 2,
+  "name": "Убийство Сипягина",
+  "description": "Апрель 1902 года. Эсер Балмашев застрелил министра внутренних дел Сипягина прямо в Мариинском дворце. Двор в шоке. Плеве, новый кандидат на пост министра, обещает «жёсткой рукой» искоренить революцию. Назначить его?",
+  "image": "id17",
+  "properties_yes": {
+    "text": "Назначить Плеве — нужна твёрдость",
+    "pos": {
+      "id_next": 18,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"nobility": 18, "army": 10, "people": -15, "treasury": 5}
+    },
+    "neg": {
+      "id_next": 18,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"people": -25, "nobility": 8, "army": -10, "treasury": -8}
+    },
+    "neu": {
+      "id_next": 18,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 10, "people": -15, "army": 5}
+    }
+  },
+  "properties_no": {
+    "text": "Выбрать более умеренного министра",
+    "pos": {
+      "id_next": 18,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"people": 15, "nobility": -10, "treasury": 5}
+    },
+    "neg": {
+      "id_next": 18,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": -20, "army": -12, "people": 5}
+    },
+    "neu": {
+      "id_next": 18,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 8, "nobility": -10, "army": -5}
+    }
+  }
+}

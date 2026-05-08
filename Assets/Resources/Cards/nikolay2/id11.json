@@ -1,0 +1,50 @@
+{
+  "id": 11,
+  "is_start": false,
+  "type": 2,
+  "name": "Ходынское поле",
+  "description": "Май 1896 года. Москва празднует коронацию. На Ходынском поле раздают подарки — кружки, пряники, платки. Толпа в полмиллиона человек напирает, начинается давка. Гибнут более 1300 человек. Великий князь Сергей Александрович настаивает: «Не отменяй вечерний бал у французского посла, государь. Иначе оскорбим союзника». Ваше решение?",
+  "image": "id11",
+  "properties_yes": {
+    "text": "Отменить бал, объявить траур",
+    "pos": {
+      "id_next": 12,
+      "moves_next": 1,
+      "chance": 0.6,
+      "properties": {"people": 20, "nobility": -10, "army": 5, "treasury": -5}
+    },
+    "neg": {
+      "id_next": 12,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 5, "nobility": -20, "treasury": -10}
+    },
+    "neu": {
+      "id_next": 12,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 10, "nobility": -8, "treasury": -5}
+    }
+  },
+  "properties_no": {
+    "text": "Поехать на бал, как и планировалось",
+    "pos": {
+      "id_next": 12,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": 10, "army": 5, "people": -15}
+    },
+    "neg": {
+      "id_next": 12,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"people": -30, "nobility": -5, "army": -10}
+    },
+    "neu": {
+      "id_next": 12,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": -15, "nobility": 5, "army": -5}
+    }
+  }
+}

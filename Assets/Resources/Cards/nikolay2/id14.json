@@ -1,0 +1,50 @@
+{
+  "id": 14,
+  "is_start": false,
+  "type": 2,
+  "name": "Порт-Артур",
+  "description": "1898 год. Витте докладывает: «Государь, Китай согласен сдать нам Порт-Артур в аренду на 25 лет. Это незамерзающий порт на Жёлтом море — мечта о тёплых морях сбывается». Но министр иностранных дел предупреждает: «Япония считает этот регион своей сферой влияния. Будут осложнения». Принять Порт-Артур?",
+  "image": "id14",
+  "properties_yes": {
+    "text": "Подписать договор аренды",
+    "pos": {
+      "id_next": 15,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"nobility": 15, "army": 12, "people": 8, "treasury": -15}
+    },
+    "neg": {
+      "id_next": 15,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"army": -20, "treasury": -20, "nobility": -10}
+    },
+    "neu": {
+      "id_next": 15,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 8, "army": 5, "treasury": -12}
+    }
+  },
+  "properties_no": {
+    "text": "Отказаться — не злить Японию",
+    "pos": {
+      "id_next": 15,
+      "moves_next": 1,
+      "chance": 0.45,
+      "properties": {"treasury": 12, "people": 8, "nobility": -12, "army": -5}
+    },
+    "neg": {
+      "id_next": 15,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"nobility": -20, "army": -15, "people": -5}
+    },
+    "neu": {
+      "id_next": 15,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"treasury": 8, "nobility": -10, "army": -5}
+    }
+  }
+}

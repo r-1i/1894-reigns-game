@@ -1,0 +1,50 @@
+{
+  "id": 12,
+  "is_start": false,
+  "type": 0,
+  "name": "Манифест о рабочих",
+  "description": "1897 год. Министр финансов Витте докладывает о брожениях на петербургских заводах. Рабочий день — 12-14 часов, дети у станков. Витте предлагает закон об ограничении рабочего дня до 11.5 часов. Заводчики возмущены: «Это разорит промышленность!». Подписать манифест?",
+  "image": "id12",
+  "properties_yes": {
+    "text": "Подписать закон о рабочем дне",
+    "pos": {
+      "id_next": 13,
+      "moves_next": 1,
+      "chance": 0.55,
+      "properties": {"people": 18, "nobility": -8, "treasury": -5}
+    },
+    "neg": {
+      "id_next": 13,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 5, "nobility": -15, "treasury": -10}
+    },
+    "neu": {
+      "id_next": 13,
+      "moves_next": 1,
+      "chance": 0.25,
+      "properties": {"people": 10, "nobility": -7, "treasury": -3}
+    }
+  },
+  "properties_no": {
+    "text": "Отклонить — заводчики важнее",
+    "pos": {
+      "id_next": 13,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"nobility": 12, "treasury": 8, "people": -15}
+    },
+    "neg": {
+      "id_next": 13,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"people": -25, "army": -5, "nobility": 5}
+    },
+    "neu": {
+      "id_next": 13,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": -12, "nobility": 8, "treasury": 5}
+    }
+  }
+}

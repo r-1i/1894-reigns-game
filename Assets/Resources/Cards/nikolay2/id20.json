@@ -1,0 +1,50 @@
+{
+  "id": 20,
+  "is_start": false,
+  "type": 2,
+  "name": "Нота из Токио",
+  "description": "Январь 1904 года. Японский посол вручает ноту: либо Россия признаёт Корею японской сферой влияния, либо разрыв отношений. Куропаткин уверен: «Закидаем шапками этих макак за две недели». Витте в отчаянии: «Государь, флот не готов, Транссиб не достроен!». Отвергнуть ультиматум?",
+  "image": "id20",
+  "properties_yes": {
+    "text": "Отвергнуть ультиматум, готовиться к войне",
+    "pos": {
+      "id_next": 21,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"nobility": 15, "army": 12, "people": 8, "treasury": -15}
+    },
+    "neg": {
+      "id_next": 21,
+      "moves_next": 1,
+      "chance": 0.45,
+      "properties": {"army": -25, "treasury": -25, "people": -15, "nobility": -10}
+    },
+    "neu": {
+      "id_next": 21,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 8, "army": 5, "treasury": -15}
+    }
+  },
+  "properties_no": {
+    "text": "Согласиться на компромисс с Японией",
+    "pos": {
+      "id_next": 21,
+      "moves_next": 1,
+      "chance": 0.45,
+      "properties": {"treasury": 15, "people": 10, "nobility": -15, "army": -8}
+    },
+    "neg": {
+      "id_next": 21,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"nobility": -25, "army": -18, "people": -5}
+    },
+    "neu": {
+      "id_next": 21,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"treasury": 10, "nobility": -12, "army": -8}
+    }
+  }
+}

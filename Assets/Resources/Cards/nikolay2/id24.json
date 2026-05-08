@@ -1,0 +1,50 @@
+{
+  "id": 24,
+  "is_start": false,
+  "type": 0,
+  "name": "Оборона Маньчжурии",
+  "description": "Решение оставить флот на Балтике освобождает ресурсы для сухопутной армии. Куропаткин получает подкрепление, Транссиб работает на пределе. Но без флота Япония полностью господствует на море. Порт-Артур обречён без снабжения. Великий князь Алексей Александрович предлагает заключить мир, пока есть козыри. Ваше решение?",
+  "image": "id24",
+  "properties_yes": {
+    "text": "Начать переговоры о мире через посредников",
+    "pos": {
+      "id_next": 25,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"treasury": 15, "people": 12, "nobility": -10, "army": -5}
+    },
+    "neg": {
+      "id_next": 25,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": -22, "army": -15, "people": 5}
+    },
+    "neu": {
+      "id_next": 25,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"treasury": 10, "people": 8, "nobility": -10}
+    }
+  },
+  "properties_no": {
+    "text": "Продолжать войну на суше до победы",
+    "pos": {
+      "id_next": 25,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"nobility": 12, "army": 15, "treasury": -15, "people": -5}
+    },
+    "neg": {
+      "id_next": 25,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"army": -22, "treasury": -25, "people": -15, "nobility": -8}
+    },
+    "neu": {
+      "id_next": 25,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 8, "army": 5, "treasury": -15, "people": -8}
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": 22,
+  "is_start": false,
+  "type": 2,
+  "name": "Судьба Балтийского флота",
+  "description": "Сентябрь 1904 года. Порт-Артур осаждён. Адмирал Рожественский предлагает: отправить Балтийский флот вокруг Африки на Дальний Восток — 18 000 миль. Витте возражает: «Это безумие! Команды неопытны, корабли устарели, Англия пропустит нас неохотно». Рожественский настаивает: «Без флота Тихий океан потерян». Отправить эскадру?",
+  "image": "id22",
+  "properties_yes": {
+    "text": "Отправить эскадру в плавание",
+    "pos": {
+      "id_next": 23,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"army": 15, "nobility": 12, "people": 8, "treasury": -20}
+    },
+    "neg": {
+      "id_next": 23,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"army": -25, "treasury": -25, "people": -15, "nobility": -10}
+    },
+    "neu": {
+      "id_next": 23,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"army": 5, "nobility": 5, "treasury": -18}
+    }
+  },
+  "properties_no": {
+    "text": "Оставить флот на Балтике",
+    "pos": {
+      "id_next": 24,
+      "moves_next": 1,
+      "chance": 0.45,
+      "properties": {"treasury": 15, "people": 8, "army": -10, "nobility": -8}
+    },
+    "neg": {
+      "id_next": 24,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"army": -20, "nobility": -15, "people": -10}
+    },
+    "neu": {
+      "id_next": 24,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"treasury": 10, "army": -8, "nobility": -8}
+    }
+  }
+}

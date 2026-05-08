@@ -1,0 +1,50 @@
+{
+  "id": 23,
+  "is_start": false,
+  "type": 0,
+  "name": "Гулльский инцидент",
+  "description": "Октябрь 1904 года. Эскадра Рожественского в Северном море приняла английские рыбацкие траулеры за японские миноносцы и открыла огонь. Англия в ярости, требует объяснений и грозит войной. Флот ещё даже не дошёл до Африки, а уже втянул Россию в дипломатический кризис. Что делать?",
+  "image": "id23",
+  "properties_yes": {
+    "text": "Принести извинения и выплатить компенсацию",
+    "pos": {
+      "id_next": 25,
+      "moves_next": 1,
+      "chance": 0.55,
+      "properties": {"people": 8, "nobility": -10, "treasury": -15}
+    },
+    "neg": {
+      "id_next": 25,
+      "moves_next": 1,
+      "chance": 0.25,
+      "properties": {"nobility": -18, "army": -10, "treasury": -18}
+    },
+    "neu": {
+      "id_next": 25,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": -8, "treasury": -12, "people": 5}
+    }
+  },
+  "properties_no": {
+    "text": "Защищать действия адмирала, не уступать Англии",
+    "pos": {
+      "id_next": 25,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": 12, "army": 10, "people": 5, "treasury": -10}
+    },
+    "neg": {
+      "id_next": 25,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"army": -20, "treasury": -25, "nobility": -10, "people": -8}
+    },
+    "neu": {
+      "id_next": 25,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 8, "treasury": -15, "army": -8}
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": 25,
+  "is_start": false,
+  "type": 2,
+  "name": "Кровавое воскресенье",
+  "description": "9 января 1905 года. Священник Гапон ведёт 150 000 рабочих к Зимнему дворцу с петицией. Войска открывают огонь — сотни убитых. Страна в шоке. Великий князь Сергей Александрович: «Подавить любой ценой!». Витте: «Государь, нужны реформы немедленно, иначе революция!». Ваш выбор определит судьбу династии.",
+  "image": "id25",
+  "properties_yes": {
+    "text": "Объявить о созыве Думы и реформах",
+    "pos": {
+      "id_next": 26,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"people": 25, "nobility": -18, "army": -8, "treasury": -10}
+    },
+    "neg": {
+      "id_next": 26,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": -28, "army": -15, "people": 8, "treasury": -10}
+    },
+    "neu": {
+      "id_next": 26,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 15, "nobility": -15, "treasury": -8}
+    }
+  },
+  "properties_no": {
+    "text": "Ввести военное положение, подавить силой",
+    "pos": {
+      "id_next": 26,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": 18, "army": 12, "people": -25, "treasury": -10}
+    },
+    "neg": {
+      "id_next": 26,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"people": -35, "army": -15, "nobility": 5, "treasury": -15}
+    },
+    "neu": {
+      "id_next": 26,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 10, "people": -22, "army": 5, "treasury": -10}
+    }
+  }
+}

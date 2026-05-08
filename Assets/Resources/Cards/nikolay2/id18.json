@@ -1,0 +1,50 @@
+{
+  "id": 18,
+  "is_start": false,
+  "type": 2,
+  "name": "Безобразовская клика",
+  "description": "1903 год. Группа авантюристов во главе с Безобразовым предлагает Николаю расширить концессии в Корее, оттеснив японцев. Витте в ужасе: «Государь, это прямой путь к войне! Я подам в отставку!». Александра Фёдоровна шепчет: «Безобразов прав, Россия должна быть твёрдой». Поддержать клику?",
+  "image": "id18",
+  "properties_yes": {
+    "text": "Поддержать Безобразова, отправить Витте в отставку",
+    "pos": {
+      "id_next": 19,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": 12, "army": 10, "treasury": -15, "people": -8}
+    },
+    "neg": {
+      "id_next": 19,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"treasury": -25, "people": -15, "nobility": -10, "army": -8}
+    },
+    "neu": {
+      "id_next": 19,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 5, "treasury": -15, "people": -8}
+    }
+  },
+  "properties_no": {
+    "text": "Отклонить авантюру, сохранить Витте",
+    "pos": {
+      "id_next": 19,
+      "moves_next": 1,
+      "chance": 0.6,
+      "properties": {"treasury": 18, "people": 10, "nobility": -10}
+    },
+    "neg": {
+      "id_next": 19,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": -18, "army": -10, "treasury": 5}
+    },
+    "neu": {
+      "id_next": 19,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"treasury": 10, "nobility": -8, "people": 5}
+    }
+  }
+}

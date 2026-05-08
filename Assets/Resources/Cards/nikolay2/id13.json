@@ -1,0 +1,50 @@
+{
+  "id": 13,
+  "is_start": false,
+  "type": 0,
+  "name": "Гаагская конференция",
+  "description": "1898 год. Министр иностранных дел Муравьёв предлагает: «Государь, созовите международную конференцию о всеобщем разоружении. Это укрепит образ России как миротворца». Военный министр Куропаткин против: «Покажем слабость армии перед Европой». Созвать конференцию?",
+  "image": "id13",
+  "properties_yes": {
+    "text": "Созвать конференцию мира",
+    "pos": {
+      "id_next": 14,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"people": 12, "nobility": 8, "army": -10, "treasury": -5}
+    },
+    "neg": {
+      "id_next": 14,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"army": -18, "nobility": -8, "treasury": -8}
+    },
+    "neu": {
+      "id_next": 14,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 8, "army": -10, "treasury": -5}
+    }
+  },
+  "properties_no": {
+    "text": "Отказаться — армия превыше всего",
+    "pos": {
+      "id_next": 14,
+      "moves_next": 1,
+      "chance": 0.45,
+      "properties": {"army": 15, "nobility": 8, "people": -8}
+    },
+    "neg": {
+      "id_next": 14,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"people": -15, "nobility": -10, "army": 5}
+    },
+    "neu": {
+      "id_next": 14,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"army": 8, "people": -7, "nobility": 3}
+    }
+  }
+}

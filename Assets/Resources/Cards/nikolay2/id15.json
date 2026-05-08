@@ -1,0 +1,50 @@
+{
+  "id": 15,
+  "is_start": false,
+  "type": 0,
+  "name": "Боксёрское восстание",
+  "description": "1900 год. В Китае вспыхивает восстание ихэтуаней. Иностранные посольства в Пекине осаждены. Великие державы формируют коалицию. Куропаткин: «Государь, отправим войска — заодно укрепим позиции в Маньчжурии». Витте морщится: «Это огромные расходы и риск войны с Японией». Послать войска?",
+  "image": "id15",
+  "properties_yes": {
+    "text": "Отправить экспедиционный корпус",
+    "pos": {
+      "id_next": 16,
+      "moves_next": 1,
+      "chance": 0.45,
+      "properties": {"army": 15, "nobility": 10, "treasury": -12}
+    },
+    "neg": {
+      "id_next": 16,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"treasury": -20, "people": -10, "army": -8}
+    },
+    "neu": {
+      "id_next": 16,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"army": 8, "nobility": 5, "treasury": -10}
+    }
+  },
+  "properties_no": {
+    "text": "Воздержаться от вмешательства",
+    "pos": {
+      "id_next": 16,
+      "moves_next": 1,
+      "chance": 0.45,
+      "properties": {"treasury": 10, "people": 8, "nobility": -10}
+    },
+    "neg": {
+      "id_next": 16,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"nobility": -18, "army": -12, "treasury": 5}
+    },
+    "neu": {
+      "id_next": 16,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"treasury": 7, "nobility": -8, "army": -5}
+    }
+  }
+}
