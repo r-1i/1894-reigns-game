@@ -1,0 +1,50 @@
+{
+  "id": 46,
+  "is_start": false,
+  "type": 2,
+  "name": "Хлебные бунты",
+  "description": "Февраль 1917 года. В Петрограде начались перебои с хлебом. Очереди превращаются в стачки, стачки — в восстание. Гарнизон столицы переходит на сторону восставших. Вы в Ставке. Председатель Думы Родзянко телеграфирует: «Государь, последний час пробил». Послать войска?",
+  "image": "id46",
+  "properties_yes": {
+    "text": "Послать с фронта генерала Иванова с карательной экспедицией",
+    "pos": {
+      "id_next": 48,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": 10, "army": 8, "people": -22, "treasury": -15}
+    },
+    "neg": {
+      "id_next": 48,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"people": -32, "army": -25, "nobility": -10, "treasury": -20}
+    },
+    "neu": {
+      "id_next": 48,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 5, "people": -25, "army": -15, "treasury": -15}
+    }
+  },
+  "properties_no": {
+    "text": "Срочно вернуться в Петроград, идти на уступки",
+    "pos": {
+      "id_next": 48,
+      "moves_next": 1,
+      "chance": 0.45,
+      "properties": {"people": 18, "nobility": -15, "army": 5, "treasury": -10}
+    },
+    "neg": {
+      "id_next": 48,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"people": -15, "nobility": -22, "army": -18, "treasury": -15}
+    },
+    "neu": {
+      "id_next": 48,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 10, "nobility": -15, "army": -8}
+    }
+  }
+}

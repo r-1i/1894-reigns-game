@@ -1,0 +1,50 @@
+{
+  "id": 45,
+  "is_start": false,
+  "type": 2,
+  "name": "Война и парламент",
+  "description": "Август 1914 года. Война началась, но ваша конституционная монархия устойчива. Дума единодушно голосует за военные кредиты. Министры подотчётны парламенту. Распутин давно не у дел — Алексей лечится у швейцарских врачей. Когда в 1915 фронт даёт трещину, Дума не бунтует, а консолидируется. Кто возглавит правительство в кризис?",
+  "image": "id45",
+  "properties_yes": {
+    "text": "Назначить либерала Милюкова премьером",
+    "pos": {
+      "id_next": 47,
+      "moves_next": 1,
+      "chance": 0.55,
+      "properties": {"people": 22, "treasury": 12, "army": 8, "nobility": -12}
+    },
+    "neg": {
+      "id_next": 47,
+      "moves_next": 1,
+      "chance": 0.25,
+      "properties": {"nobility": -22, "army": -8, "people": 8}
+    },
+    "neu": {
+      "id_next": 47,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 12, "nobility": -15, "treasury": 8}
+    }
+  },
+  "properties_no": {
+    "text": "Назначить умеренного консерватора",
+    "pos": {
+      "id_next": 47,
+      "moves_next": 1,
+      "chance": 0.6,
+      "properties": {"nobility": 12, "army": 10, "people": 10, "treasury": 8}
+    },
+    "neg": {
+      "id_next": 47,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": -12, "nobility": 5, "army": -5}
+    },
+    "neu": {
+      "id_next": 47,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 8, "people": 5, "treasury": 5}
+    }
+  }
+}

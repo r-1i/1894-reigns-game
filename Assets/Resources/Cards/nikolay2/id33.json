@@ -1,0 +1,50 @@
+{
+  "id": 33,
+  "is_start": false,
+  "type": 2,
+  "name": "Цесаревич Алексей",
+  "description": "Сентябрь 1907 года. У наследника Алексея случается тяжёлый приступ гемофилии. Врачи бессильны. Александра Фёдоровна в отчаянии вспоминает о Распутине: «Ники, только он может помочь». Старец появляется при дворе и кровотечение останавливается. Двор шокирован. Приблизить Распутина к семье?",
+  "image": "id33",
+  "properties_yes": {
+    "text": "Принять Распутина как духовного советника",
+    "pos": {
+      "id_next": 34,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"people": 5, "nobility": -15, "army": -8, "treasury": -5}
+    },
+    "neg": {
+      "id_next": 34,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"nobility": -25, "army": -15, "people": -12, "treasury": -8}
+    },
+    "neu": {
+      "id_next": 34,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": -18, "army": -10, "people": -5}
+    }
+  },
+  "properties_no": {
+    "text": "Держать его на расстоянии",
+    "pos": {
+      "id_next": 34,
+      "moves_next": 1,
+      "chance": 0.55,
+      "properties": {"nobility": 15, "army": 10, "people": 5}
+    },
+    "neg": {
+      "id_next": 34,
+      "moves_next": 1,
+      "chance": 0.25,
+      "properties": {"nobility": -10, "people": -8, "treasury": -5}
+    },
+    "neu": {
+      "id_next": 34,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 8, "army": 5, "people": -3}
+    }
+  }
+}

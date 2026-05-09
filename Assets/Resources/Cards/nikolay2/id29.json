@@ -1,0 +1,50 @@
+{
+  "id": 29,
+  "is_start": false,
+  "type": 0,
+  "name": "Столыпин у трона",
+  "description": "Июль 1906 года. Витте отправлен в отставку. Молодой саратовский губернатор Пётр Столыпин предлагает: «Сначала успокоение, потом реформы. Мне нужны военно-полевые суды для террористов и аграрная реформа для крестьян». Назначить его премьером?",
+  "image": "id29",
+  "properties_yes": {
+    "text": "Назначить Столыпина",
+    "pos": {
+      "id_next": 30,
+      "moves_next": 1,
+      "chance": 0.55,
+      "properties": {"nobility": 12, "army": 10, "people": 8, "treasury": 10}
+    },
+    "neg": {
+      "id_next": 30,
+      "moves_next": 1,
+      "chance": 0.25,
+      "properties": {"people": -18, "nobility": -10, "treasury": -8}
+    },
+    "neu": {
+      "id_next": 30,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 8, "army": 5, "people": -5}
+    }
+  },
+  "properties_no": {
+    "text": "Выбрать более консервативного премьера",
+    "pos": {
+      "id_next": 30,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"nobility": 12, "army": 5, "people": -10, "treasury": -5}
+    },
+    "neg": {
+      "id_next": 30,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"people": -22, "nobility": -8, "army": -10, "treasury": -8}
+    },
+    "neu": {
+      "id_next": 30,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 8, "people": -12, "treasury": -5}
+    }
+  }
+}

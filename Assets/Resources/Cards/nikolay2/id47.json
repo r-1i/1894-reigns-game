@@ -1,0 +1,50 @@
+{
+  "id": 47,
+  "is_start": false,
+  "type": 2,
+  "name": "Победа в войне",
+  "description": "1917 год. Реформированная армия с союзниками удерживает фронт. Революционных потрясений нет — Дума направляет общественное недовольство в законное русло. Брестский мир не подписан, Россия в числе победителей. На Версальской конференции 1919 года вы сидите рядом с Вильсоном и Клемансо. Алексей готовится принять ограниченную корону. Подвести итог правления?",
+  "image": "id47",
+  "properties_yes": {
+    "text": "Принять конституционную монархию навсегда",
+    "pos": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0.65,
+      "properties": {"people": 25, "nobility": 10, "army": 15, "treasury": 15}
+    },
+    "neg": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0.15,
+      "properties": {"nobility": -15, "people": 10, "treasury": 5}
+    },
+    "neu": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 18, "nobility": 5, "army": 10, "treasury": 10}
+    }
+  },
+  "properties_no": {
+    "text": "Использовать победу для усиления своей власти",
+    "pos": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"nobility": 18, "army": 12, "people": -15, "treasury": 8}
+    },
+    "neg": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0.45,
+      "properties": {"people": -28, "nobility": -10, "army": -10, "treasury": -12}
+    },
+    "neu": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 12, "people": -18, "army": 5}
+    }
+  }
+}

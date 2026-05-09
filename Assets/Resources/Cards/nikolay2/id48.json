@@ -1,0 +1,50 @@
+{
+  "id": 48,
+  "is_start": false,
+  "type": 2,
+  "name": "Псковская ловушка",
+  "description": "1 марта 1917 года. Ваш поезд остановлен в Пскове. Командующие фронтами один за другим телеграфируют о необходимости отречения — Брусилов, Алексеев, Эверт. Великий князь Николай Николаевич — тоже. Генералы Рузский и Шульгин входят в вагон с проектом манифеста об отречении. Подписать?",
+  "image": "id48",
+  "properties_yes": {
+    "text": "Подписать отречение в пользу брата Михаила",
+    "pos": {
+      "id_next": 49,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"people": 12, "army": 5, "nobility": -25, "treasury": -10}
+    },
+    "neg": {
+      "id_next": 49,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"nobility": -32, "army": -15, "people": -8, "treasury": -15}
+    },
+    "neu": {
+      "id_next": 49,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 8, "nobility": -28, "army": -8}
+    }
+  },
+  "properties_no": {
+    "text": "Отказаться, бороться до конца",
+    "pos": {
+      "id_next": 49,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 8, "army": 5, "people": -15, "treasury": -15}
+    },
+    "neg": {
+      "id_next": 49,
+      "moves_next": 1,
+      "chance": 0.6,
+      "properties": {"people": -30, "nobility": -25, "army": -28, "treasury": -25}
+    },
+    "neu": {
+      "id_next": 49,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": -20, "nobility": -18, "army": -20, "treasury": -18}
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": 35,
+  "is_start": false,
+  "type": 2,
+  "name": "Убийство Столыпина",
+  "description": "Сентябрь 1911 года. В Киевской опере, на ваших глазах, эсер Богров стреляет в Столыпина. Премьер умирает через четыре дня. Перед смертью он успевает сказать: «Счастлив умереть за царя». Двор облегчённо вздыхает — Столыпин стал слишком влиятелен. Выбрать преемника?",
+  "image": "id35",
+  "properties_yes": {
+    "text": "Назначить продолжателя реформ Коковцова",
+    "pos": {
+      "id_next": 36,
+      "moves_next": 1,
+      "chance": 0.55,
+      "properties": {"people": 15, "treasury": 12, "nobility": -8, "army": 5}
+    },
+    "neg": {
+      "id_next": 36,
+      "moves_next": 1,
+      "chance": 0.25,
+      "properties": {"nobility": -18, "treasury": -10, "people": 5}
+    },
+    "neu": {
+      "id_next": 36,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 10, "treasury": 8, "nobility": -10}
+    }
+  },
+  "properties_no": {
+    "text": "Назначить консерватора, свернуть реформы",
+    "pos": {
+      "id_next": 36,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"nobility": 15, "army": 5, "people": -15, "treasury": -8}
+    },
+    "neg": {
+      "id_next": 36,
+      "moves_next": 1,
+      "chance": 0.45,
+      "properties": {"people": -25, "treasury": -18, "nobility": 5, "army": -10}
+    },
+    "neu": {
+      "id_next": 36,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 10, "people": -18, "treasury": -10}
+    }
+  }
+}

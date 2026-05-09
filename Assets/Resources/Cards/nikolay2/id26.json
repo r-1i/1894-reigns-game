@@ -1,0 +1,50 @@
+{
+  "id": 26,
+  "is_start": false,
+  "type": 2,
+  "name": "Манифест 17 октября",
+  "description": "Октябрь 1905 года. Всероссийская политическая стачка парализовала империю. Витте кладёт перед вами проект Манифеста: «Государь, дайте народу гражданские свободы и Государственную Думу — иначе революция сметёт всё». Великий князь Николай Николаевич угрожает застрелиться, если манифест не будет подписан. Победоносцев молчит в углу. Подписать?",
+  "image": "id26",
+  "properties_yes": {
+    "text": "Подписать Манифест о свободах",
+    "pos": {
+      "id_next": 27,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"people": 22, "nobility": -15, "army": -5, "treasury": 10}
+    },
+    "neg": {
+      "id_next": 27,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": -28, "army": -12, "people": 10}
+    },
+    "neu": {
+      "id_next": 27,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 15, "nobility": -15, "treasury": 5}
+    }
+  },
+  "properties_no": {
+    "text": "Объявить военную диктатуру",
+    "pos": {
+      "id_next": 28,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": 18, "army": 15, "people": -25, "treasury": -15}
+    },
+    "neg": {
+      "id_next": 28,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"people": -35, "army": -18, "treasury": -25, "nobility": 5}
+    },
+    "neu": {
+      "id_next": 28,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 10, "people": -22, "army": 8, "treasury": -15}
+    }
+  }
+}

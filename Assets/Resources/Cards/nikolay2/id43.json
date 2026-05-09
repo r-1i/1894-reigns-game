@@ -1,0 +1,50 @@
+{
+  "id": 43,
+  "is_start": false,
+  "type": 2,
+  "name": "Гражданская война 1907",
+  "description": "Военно-полевые суды залили империю кровью. Армия раскололась — солдаты переходят на сторону восставших крестьян. Великие князья совещаются за вашей спиной о регентстве. Февральским утром 1907 года к Царскому Селу приближаются мятежные полки во главе с генералом Рузским. Никто не выходит вас защищать. Бежать?",
+  "image": "id43",
+  "properties_yes": {
+    "text": "Бежать в Ливадию через Финляндию",
+    "pos": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0.25,
+      "properties": {"people": -25, "nobility": -30, "army": -25, "treasury": -25}
+    },
+    "neg": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0.55,
+      "properties": {"people": -35, "nobility": -35, "army": -30, "treasury": -30}
+    },
+    "neu": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": -28, "nobility": -32, "army": -28, "treasury": -25}
+    }
+  },
+  "properties_no": {
+    "text": "Остаться в Царском Селе и принять судьбу",
+    "pos": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"people": 8, "nobility": -25, "army": -20, "treasury": -25}
+    },
+    "neg": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"people": -22, "nobility": -32, "army": -28, "treasury": -28}
+    },
+    "neu": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": -10, "nobility": -28, "army": -25, "treasury": -22}
+    }
+  }
+}

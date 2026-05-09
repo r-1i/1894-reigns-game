@@ -1,0 +1,50 @@
+{
+  "id": 27,
+  "is_start": false,
+  "type": 2,
+  "name": "Первая Государственная Дума",
+  "description": "Апрель 1906 года. Открывается Первая Дума. Кадеты требуют принудительного отчуждения помещичьих земель. Двор в ярости. Горемыкин шепчет: «Распустите эту говорильню, государь». Народ ждёт реформ. Ваше решение?",
+  "image": "id27",
+  "properties_yes": {
+    "text": "Распустить Думу",
+    "pos": {
+      "id_next": 29,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"nobility": 18, "army": 8, "people": -22, "treasury": 5}
+    },
+    "neg": {
+      "id_next": 29,
+      "moves_next": 1,
+      "chance": 0.45,
+      "properties": {"people": -28, "nobility": 5, "army": -10, "treasury": -10}
+    },
+    "neu": {
+      "id_next": 29,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 10, "people": -18, "army": 3}
+    }
+  },
+  "properties_no": {
+    "text": "Пойти на компромисс с Думой",
+    "pos": {
+      "id_next": 29,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"people": 20, "nobility": -15, "treasury": -8}
+    },
+    "neg": {
+      "id_next": 29,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": -25, "army": -10, "people": 8, "treasury": -10}
+    },
+    "neu": {
+      "id_next": 29,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 12, "nobility": -12, "treasury": -5}
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": 38,
+  "is_start": false,
+  "type": 2,
+  "name": "Конституционные уступки",
+  "description": "Лето 1913 года. Воодушевлённый юбилеем, вы делаете беспрецедентный шаг: расширяете полномочия Думы, амнистируете политических заключённых, отдаляете Распутина от двора по совету матери. Родзянко поражён: «Государь, вы спасаете династию». Александра Фёдоровна в слезах, но вы тверды. Идти дальше?",
+  "image": "id38",
+  "properties_yes": {
+    "text": "Продолжить курс на конституционную монархию",
+    "pos": {
+      "id_next": 45,
+      "moves_next": 1,
+      "chance": 0.55,
+      "properties": {"people": 25, "treasury": 12, "army": 8, "nobility": -15}
+    },
+    "neg": {
+      "id_next": 45,
+      "moves_next": 1,
+      "chance": 0.25,
+      "properties": {"nobility": -28, "army": -10, "people": 10, "treasury": -8}
+    },
+    "neu": {
+      "id_next": 45,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 15, "nobility": -18, "treasury": 5}
+    }
+  },
+  "properties_no": {
+    "text": "Закрепить достигнутое, не торопиться",
+    "pos": {
+      "id_next": 45,
+      "moves_next": 1,
+      "chance": 0.6,
+      "properties": {"people": 15, "nobility": 8, "treasury": 10, "army": 5}
+    },
+    "neg": {
+      "id_next": 45,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": -10, "nobility": -8, "treasury": -5}
+    },
+    "neu": {
+      "id_next": 45,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 8, "nobility": 5, "treasury": 5}
+    }
+  }
+}

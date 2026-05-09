@@ -1,0 +1,50 @@
+{
+  "id": 36,
+  "is_start": false,
+  "type": 2,
+  "name": "Ленский расстрел",
+  "description": "Апрель 1912 года. На Ленских золотых приисках расстреляны бастующие рабочие — более 270 убитых. Страна возмущена. Дума требует расследования. Министр внутренних дел Макаров заявляет: «Так было, так будет». Ваша реакция?",
+  "image": "id36",
+  "properties_yes": {
+    "text": "Уволить Макарова, начать расследование",
+    "pos": {
+      "id_next": 37,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"people": 20, "nobility": -12, "treasury": -5}
+    },
+    "neg": {
+      "id_next": 37,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": -22, "army": -8, "people": 8, "treasury": -8}
+    },
+    "neu": {
+      "id_next": 37,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 12, "nobility": -10, "treasury": -3}
+    }
+  },
+  "properties_no": {
+    "text": "Поддержать министра, защитить владельцев приисков",
+    "pos": {
+      "id_next": 37,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": 12, "treasury": 8, "people": -18}
+    },
+    "neg": {
+      "id_next": 37,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"people": -30, "army": -10, "nobility": 5, "treasury": -10}
+    },
+    "neu": {
+      "id_next": 37,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 8, "people": -20, "treasury": 5}
+    }
+  }
+}

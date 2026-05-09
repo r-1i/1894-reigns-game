@@ -1,0 +1,50 @@
+{
+  "id": 44,
+  "is_start": false,
+  "type": 2,
+  "name": "Убийство Распутина",
+  "description": "Декабрь 1916 года. Князь Юсупов и великий князь Дмитрий Павлович убивают Распутина в Юсуповском дворце. Александра Фёдоровна в отчаянии. Двор в смятении. Заговор великих князей зреет — родственники Романовых требуют от вас отстранить императрицу от дел. Соглашаетесь?",
+  "image": "id44",
+  "properties_yes": {
+    "text": "Отстранить Александру от государственных дел",
+    "pos": {
+      "id_next": 46,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"nobility": 18, "army": 12, "people": 15, "treasury": 5}
+    },
+    "neg": {
+      "id_next": 46,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": -18, "people": -8, "army": -10}
+    },
+    "neu": {
+      "id_next": 46,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 10, "people": 8, "army": 5}
+    }
+  },
+  "properties_no": {
+    "text": "Защитить жену, разогнать заговорщиков",
+    "pos": {
+      "id_next": 46,
+      "moves_next": 1,
+      "chance": 0.25,
+      "properties": {"nobility": -10, "people": -15, "army": -10, "treasury": -8}
+    },
+    "neg": {
+      "id_next": 46,
+      "moves_next": 1,
+      "chance": 0.55,
+      "properties": {"nobility": -28, "army": -22, "people": -25, "treasury": -15}
+    },
+    "neu": {
+      "id_next": 46,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": -20, "people": -18, "army": -12}
+    }
+  }
+}

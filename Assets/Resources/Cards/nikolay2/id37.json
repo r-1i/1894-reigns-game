@@ -1,0 +1,50 @@
+{
+  "id": 37,
+  "is_start": false,
+  "type": 0,
+  "name": "300-летие Дома Романовых",
+  "description": "Февраль 1913 года. Грандиозные торжества по всей империи. Народ толпится на улицах, кричит «ура». Александра Фёдоровна замечает: «Ники, посмотри, как нас любят». Но в ложе Думы Родзянко мрачен: «Государь, это лишь фасад. Народ устал от Распутина и реакции». Поверить в любовь народа?",
+  "image": "id37",
+  "properties_yes": {
+    "text": "Использовать момент для укрепления самодержавия",
+    "pos": {
+      "id_next": 38,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"nobility": 18, "army": 10, "people": -10, "treasury": -10}
+    },
+    "neg": {
+      "id_next": 38,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"people": -22, "nobility": 5, "army": -8, "treasury": -15}
+    },
+    "neu": {
+      "id_next": 38,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 10, "people": -15, "treasury": -8}
+    }
+  },
+  "properties_no": {
+    "text": "Воспользоваться юбилеем для примирения с Думой",
+    "pos": {
+      "id_next": 39,
+      "moves_next": 1,
+      "chance": 0.55,
+      "properties": {"people": 18, "treasury": 5, "nobility": -8}
+    },
+    "neg": {
+      "id_next": 39,
+      "moves_next": 1,
+      "chance": 0.25,
+      "properties": {"nobility": -18, "people": 5, "treasury": -8}
+    },
+    "neu": {
+      "id_next": 39,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 10, "nobility": -10, "treasury": 3}
+    }
+  }
+}

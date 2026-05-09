@@ -1,0 +1,50 @@
+{
+  "id": 40,
+  "is_start": false,
+  "type": 2,
+  "name": "Германия объявляет войну",
+  "description": "1 августа 1914 года. Германский посол Пурталес со слезами вручает ноту об объявлении войны. Народ в едином порыве на Дворцовой площади падает на колени, поёт гимн. Великий князь Николай Николаевич назначен верховным главнокомандующим. Но через месяц — катастрофа в Восточной Пруссии под Танненбергом. Что делать?",
+  "image": "id40",
+  "properties_yes": {
+    "text": "Заменить главнокомандующего",
+    "pos": {
+      "id_next": 41,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"army": 12, "people": 8, "nobility": -12, "treasury": -8}
+    },
+    "neg": {
+      "id_next": 41,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"nobility": -22, "army": -15, "people": -8, "treasury": -10}
+    },
+    "neu": {
+      "id_next": 41,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"army": 8, "nobility": -15, "people": 5}
+    }
+  },
+  "properties_no": {
+    "text": "Оставить великого князя",
+    "pos": {
+      "id_next": 41,
+      "moves_next": 1,
+      "chance": 0.45,
+      "properties": {"nobility": 12, "army": 10, "people": 5, "treasury": -10}
+    },
+    "neg": {
+      "id_next": 41,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"army": -22, "people": -15, "treasury": -20, "nobility": -5}
+    },
+    "neu": {
+      "id_next": 41,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 8, "army": -8, "treasury": -12}
+    }
+  }
+}

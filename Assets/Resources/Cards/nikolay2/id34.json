@@ -1,0 +1,50 @@
+{
+  "id": 34,
+  "is_start": false,
+  "type": 0,
+  "name": "Боснийский кризис",
+  "description": "1908 год. Австро-Венгрия аннексировала Боснию и Герцеговину. Сербия в шоке, просит защиты. Министр иностранных дел Извольский докладывает: «Государь, армия не готова к войне. Германия за Австрию». Вступиться за сербов?",
+  "image": "id34",
+  "properties_yes": {
+    "text": "Жёстко осудить аннексию, мобилизовать резервы",
+    "pos": {
+      "id_next": 35,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"nobility": 15, "army": 10, "people": 8, "treasury": -15}
+    },
+    "neg": {
+      "id_next": 35,
+      "moves_next": 1,
+      "chance": 0.45,
+      "properties": {"army": -20, "treasury": -22, "nobility": -10, "people": -8}
+    },
+    "neu": {
+      "id_next": 35,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 8, "army": 5, "treasury": -15}
+    }
+  },
+  "properties_no": {
+    "text": "Дипломатически отступить",
+    "pos": {
+      "id_next": 35,
+      "moves_next": 1,
+      "chance": 0.45,
+      "properties": {"treasury": 12, "people": 5, "nobility": -15, "army": -8}
+    },
+    "neg": {
+      "id_next": 35,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"nobility": -25, "army": -18, "people": -10}
+    },
+    "neu": {
+      "id_next": 35,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"treasury": 8, "nobility": -12, "army": -10}
+    }
+  }
+}

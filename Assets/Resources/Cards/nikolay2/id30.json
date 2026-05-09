@@ -1,0 +1,50 @@
+{
+  "id": 30,
+  "is_start": false,
+  "type": 2,
+  "name": "Покушение на Столыпина",
+  "description": "Август 1906 года. Эсеры взорвали дачу Столыпина на Аптекарском острове. Десятки убитых, дочь премьера тяжело ранена. Столыпин невредим. Он требует: «Государь, дайте мне чрезвычайные полномочия для борьбы с террором — военно-полевые суды по всей империи». Дать?",
+  "image": "id30",
+  "properties_yes": {
+    "text": "Дать чрезвычайные полномочия",
+    "pos": {
+      "id_next": 31,
+      "moves_next": 1,
+      "chance": 0.45,
+      "properties": {"nobility": 15, "army": 12, "treasury": 8, "people": -10}
+    },
+    "neg": {
+      "id_next": 31,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"people": -25, "nobility": 5, "army": -8, "treasury": -10}
+    },
+    "neu": {
+      "id_next": 31,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 10, "army": 5, "people": -15}
+    }
+  },
+  "properties_no": {
+    "text": "Ограничиться обычными мерами",
+    "pos": {
+      "id_next": 31,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"people": 12, "nobility": -10, "treasury": -5}
+    },
+    "neg": {
+      "id_next": 31,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"nobility": -22, "army": -15, "treasury": -12, "people": 5}
+    },
+    "neu": {
+      "id_next": 31,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 8, "nobility": -12, "army": -8}
+    }
+  }
+}

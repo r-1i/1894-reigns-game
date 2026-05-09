@@ -1,0 +1,50 @@
+{
+  "id": 41,
+  "is_start": false,
+  "type": 2,
+  "name": "Великое отступление",
+  "description": "Лето 1915 года. Русская армия отступает из Польши, Галиции, Литвы. Снарядов нет, винтовок не хватает на каждого третьего солдата. Министры умоляют: «Государь, не принимайте командование лично — на вас падёт ответственность за поражения». Но вы решаете ехать в Ставку. Принять командование?",
+  "image": "id41",
+  "properties_yes": {
+    "text": "Принять верховное командование лично",
+    "pos": {
+      "id_next": 42,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"army": 15, "people": 10, "nobility": -10, "treasury": -15}
+    },
+    "neg": {
+      "id_next": 42,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"army": -25, "people": -22, "nobility": -18, "treasury": -15}
+    },
+    "neu": {
+      "id_next": 42,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"army": 8, "people": -10, "nobility": -15, "treasury": -10}
+    }
+  },
+  "properties_no": {
+    "text": "Доверить генералу Алексееву",
+    "pos": {
+      "id_next": 42,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"army": 15, "nobility": 8, "treasury": -8, "people": 5}
+    },
+    "neg": {
+      "id_next": 42,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"army": -15, "people": -10, "nobility": -8, "treasury": -12}
+    },
+    "neu": {
+      "id_next": 42,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"army": 10, "nobility": 5, "treasury": -8}
+    }
+  }
+}

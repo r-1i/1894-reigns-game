@@ -1,0 +1,50 @@
+{
+  "id": 31,
+  "is_start": false,
+  "type": 2,
+  "name": "Аграрная реформа",
+  "description": "1907 год. Столыпин начинает реформу: разрушает общину, даёт крестьянам право выйти на хутора. Помещики недовольны: «Это размывает основы дворянства». Народники в ярости: «Это рушит вековой уклад». Поддержать реформу полностью?",
+  "image": "id31",
+  "properties_yes": {
+    "text": "Полная поддержка реформы",
+    "pos": {
+      "id_next": 32,
+      "moves_next": 1,
+      "chance": 0.55,
+      "properties": {"people": 20, "treasury": 12, "nobility": -12, "army": 5}
+    },
+    "neg": {
+      "id_next": 32,
+      "moves_next": 1,
+      "chance": 0.25,
+      "properties": {"nobility": -25, "people": -8, "treasury": -10}
+    },
+    "neu": {
+      "id_next": 32,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 12, "nobility": -15, "treasury": 5}
+    }
+  },
+  "properties_no": {
+    "text": "Смягчить реформу под давлением дворян",
+    "pos": {
+      "id_next": 32,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"nobility": 12, "treasury": 5, "people": -8}
+    },
+    "neg": {
+      "id_next": 32,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"people": -22, "treasury": -10, "nobility": 5, "army": -5}
+    },
+    "neu": {
+      "id_next": 32,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 8, "people": -12, "treasury": -3}
+    }
+  }
+}

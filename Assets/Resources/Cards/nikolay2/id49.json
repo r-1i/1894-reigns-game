@@ -1,0 +1,50 @@
+{
+  "id": 49,
+  "is_start": false,
+  "type": 2,
+  "name": "Отречение",
+  "description": "2 марта 1917 года. В вагоне царского поезда вы подписываете манифест об отречении. Михаил отказывается принять корону на следующий день. Трёхсотлетняя династия пала. Семья под арестом в Александровском дворце. Керенский обещает защиту. Впереди Тобольск, Екатеринбург, Дом Ипатьева. История ускользает из ваших рук. Подвести итог?",
+  "image": "id49",
+  "properties_yes": {
+    "text": "Принять судьбу с христианским смирением",
+    "pos": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0.45,
+      "properties": {"people": 10, "nobility": -10, "army": -8, "treasury": -15}
+    },
+    "neg": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {"people": -15, "nobility": -25, "army": -20, "treasury": -20}
+    },
+    "neu": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 5, "nobility": -18, "army": -12, "treasury": -15}
+    }
+  },
+  "properties_no": {
+    "text": "Отчаянно искать пути спасения семьи",
+    "pos": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": 8, "army": 5, "people": -10, "treasury": -20}
+    },
+    "neg": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"people": -22, "nobility": -25, "army": -22, "treasury": -25}
+    },
+    "neu": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": -12, "nobility": -15, "army": -15, "treasury": -20}
+    }
+  }
+}

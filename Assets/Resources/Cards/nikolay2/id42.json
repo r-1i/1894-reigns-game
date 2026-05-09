@@ -1,0 +1,50 @@
+{
+  "id": 42,
+  "is_start": false,
+  "type": 2,
+  "name": "Распутин у власти",
+  "description": "Зима 1915-1916. Вы в Ставке в Могилёве. Александра Фёдоровна правит в Петрограде через Распутина. Министры меняются как перчатки — «министерская чехарда». Дума в ярости. Родзянко лично умоляет: «Государь, удалите Распутина, иначе всё рухнет». Что делать?",
+  "image": "id42",
+  "properties_yes": {
+    "text": "Удалить Распутина из столицы",
+    "pos": {
+      "id_next": 44,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"people": 18, "nobility": 15, "army": 10, "treasury": 5}
+    },
+    "neg": {
+      "id_next": 44,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": -15, "people": -8, "army": -5}
+    },
+    "neu": {
+      "id_next": 44,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 10, "nobility": 8, "army": 5}
+    }
+  },
+  "properties_no": {
+    "text": "Защитить Распутина, поддержать жену",
+    "pos": {
+      "id_next": 44,
+      "moves_next": 1,
+      "chance": 0.25,
+      "properties": {"nobility": -10, "people": -15, "army": -10, "treasury": -8}
+    },
+    "neg": {
+      "id_next": 44,
+      "moves_next": 1,
+      "chance": 0.55,
+      "properties": {"nobility": -28, "people": -25, "army": -22, "treasury": -15}
+    },
+    "neu": {
+      "id_next": 44,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": -20, "people": -18, "army": -12, "treasury": -10}
+    }
+  }
+}

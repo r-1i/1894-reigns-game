@@ -1,0 +1,50 @@
+{
+  "id": 300,
+  "is_start": false,
+  "type": 2,
+  "name": "Конец игры",
+  "description": "История России свершилась. Ваше правление завершилось — победой, поражением или забвением. Каждое решение оставило след в судьбе империи и вашей семьи. Россия запомнит вас таким, каким вы были на престоле — реформатором, тираном или жертвой обстоятельств. Игра окончена.",
+  "image": "id300",
+  "properties_yes": {
+    "text": "Посмотреть итоги правления",
+    "pos": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 1.0,
+      "properties": {"people": 0, "nobility": 0, "army": 0, "treasury": 0}
+    },
+    "neg": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Начать новую игру",
+    "pos": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 1.0,
+      "properties": {"people": 0, "nobility": 0, "army": 0, "treasury": 0}
+    },
+    "neg": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

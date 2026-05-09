@@ -1,0 +1,50 @@
+{
+  "id": 32,
+  "is_start": false,
+  "type": 2,
+  "name": "Третьеиюньский переворот",
+  "description": "Июнь 1907 года. Столыпин предлагает изменить избирательный закон в пользу дворянства, распустив Вторую Думу. Это противоречит Манифесту 17 октября — фактически государственный переворот сверху. Согласиться?",
+  "image": "id32",
+  "properties_yes": {
+    "text": "Подписать новый избирательный закон",
+    "pos": {
+      "id_next": 33,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"nobility": 20, "army": 8, "treasury": 8, "people": -15}
+    },
+    "neg": {
+      "id_next": 33,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"people": -28, "nobility": 8, "army": -10, "treasury": -8}
+    },
+    "neu": {
+      "id_next": 33,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"nobility": 12, "people": -18, "treasury": 5}
+    }
+  },
+  "properties_no": {
+    "text": "Сохранить старый закон",
+    "pos": {
+      "id_next": 33,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"people": 18, "treasury": 5, "nobility": -15}
+    },
+    "neg": {
+      "id_next": 33,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"nobility": -25, "army": -10, "people": 8, "treasury": -8}
+    },
+    "neu": {
+      "id_next": 33,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"people": 10, "nobility": -15, "treasury": 3}
+    }
+  }
+}
